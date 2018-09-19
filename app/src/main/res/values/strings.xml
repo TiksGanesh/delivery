@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Delivery</string>
+    <string name="title_activity_delivery">Things to Delivery</string>
+    <string name="title_activity_maps">Delivery Location</string>
+
+    <string name="ok">OK</string>
+    <string name="change_setting">change setting</string>
+
+
+    <!-- Run Time Permission Messages -->
+    <string name="storage_request_reason">We need write external storage permission to save your photos for inspection form.</string>
+    <string name="storage_reject_reason">"We can't save your photos to file without external storage permission</string>
+
+
+    <string name="location_request_reason">We need location permission to save inspection form details.</string>
+    <string name="location_reject_reason">"We can't save your inspection form without location permission</string>
+    <string name="location_success_snackbar_message">Location permission granted.</string>
+</resources>
