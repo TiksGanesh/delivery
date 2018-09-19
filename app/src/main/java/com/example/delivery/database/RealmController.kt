@@ -69,7 +69,7 @@ class RealmController private constructor() {
                 .addChangeListener(RealmChangeListener {
 
                     val listOfDeliveries = realmInstance.copyFromRealm(it)
-                    listener.onDeliveryResultChange(it)
+                    listener.onDeliveryResultChange(listOfDeliveries)
                 })
     }
 

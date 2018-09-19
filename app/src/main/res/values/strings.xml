@@ -15,4 +15,5 @@
     <string name="location_request_reason">We need location permission to save inspection form details.</string>
     <string name="location_reject_reason">"We can't save your inspection form without location permission</string>
     <string name="location_success_snackbar_message">Location permission granted.</string>
+    <string name="image_transition">image_transition</string>
 </resources>
