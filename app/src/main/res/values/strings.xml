@@ -16,4 +16,6 @@
     <string name="location_reject_reason">"We can't save your inspection form without location permission</string>
     <string name="location_success_snackbar_message">Location permission granted.</string>
     <string name="image_transition">image_transition</string>
+    <string name="offline_device">No internet connection</string>
+    <string name="grate_all_deliveries_are_delivered">Grate !!! All deliveries are delivered</string>
 </resources>

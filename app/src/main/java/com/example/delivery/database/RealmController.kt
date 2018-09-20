@@ -44,7 +44,7 @@ class RealmController private constructor() {
 
         realmInstance.executeTransactionAsync({ realm ->
             listOfDeliveryModel.forEach {
-                //Log.e("####", it.toString());
+                Log.e("####", it.toString());
                 realm.insertOrUpdate(DeliveryRealmObject(it.id, it.description, it.imageUrl, DeliveryLocation(it.location.lat, it.location.lng, it.location.address)))
             }
         }, {

@@ -20,6 +20,8 @@ private constructor() {
     private var requestInterface: RequestInterface? = null
 
 
+    private var listener: OnRequestServiceCompleteListener? = null
+
     init {
         initRequestInterface()
     }
@@ -38,6 +40,11 @@ private constructor() {
     }
 
 
+    fun setOnRequestServiceCompleteListener(listener: OnRequestServiceCompleteListener) {
+        this.listener = listener
+    }
+
+
     /**
      * Load data from api
      *
@@ -51,7 +58,8 @@ private constructor() {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .map {
-                   RealmController.getInstance().updateDeliveries(it)
+                    RealmController.getInstance().updateDeliveries(it)
+                    listener?.onRequestCallCompleteListener()
                 }
     }
 
@@ -82,6 +90,11 @@ private constructor() {
             }
             return instance!!
         }
+    }
+
+
+    interface OnRequestServiceCompleteListener {
+        fun onRequestCallCompleteListener()
     }
 
 
